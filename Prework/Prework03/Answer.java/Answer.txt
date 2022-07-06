@@ -1,0 +1,43 @@
+public static void zoop() {
+    baffle();
+    System.out.print("You wugga ");
+    baffle();
+}
+
+public static void main(String[] args) {
+    System.out.print("No, I ");
+    zoop();
+    System.out.print("I ");
+    baffle();
+}
+
+public static void baffle() {
+    System.out.print("wug");
+    ping();
+   
+}
+
+public static void ping() {
+    System.out.println(".");
+    
+}
+Exercise 1  
+The point of this exercise is to practice reading code and to make sure that you understand the flow of execution through a program with multiple methods.
+
+a. What is the output of the following program? Be precise about where there are spaces and where there are newlines.
+No, I wug. (First Line)
+You wugga wug. (Second Line)
+I wug. (Third Line)
+Hint: Start by describing in words what ping and baffle do when they are invoked.
+baffle invokes ("wug" to be printed) and ping ("." prints periods when called)
+b. c. Draw a stack diagram that shows the state of the program the first time ping is invoked.
+
+  Stack Diagram
+  Ping()
+  Baffle()
+  Zoop()
+  Main()
+    
+    
+What happens if you invoke baffle(); at the end of the ping method- 
+It  continue to print "wug." for several lines because baffle calls "wug.", then goes to main which calls zoop, which then calls baffle twice and back to main again which calls zoop.  Eventually you will get a Stack Over flow error. 

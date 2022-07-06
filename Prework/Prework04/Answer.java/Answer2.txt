@@ -1,0 +1,88 @@
+Exercise 1.
+
+if (x > 0) {
+    if (x < 10) {
+        System.out.println("positive single digit number.");
+    }
+}
+It should read:  
+if (x > 0 && x < 10) {
+  System.out.println("positive single digit number.");
+}
+
+if (x > 0 && x < 10) {
+        System.out.println("positive single digit number.");
+    }
+}
+
+Exercise 2-
+1- Draw a stack diagram that shows the state of the program the second time zoop is invoked.
+clink
+zoop
+clink
+ping
+zoop
+main
+
+This is the answer for number 2 in Exercise 5.12
+The Complete output is:
+just for
+any not more
+It's breakfast
+!
+2- What is the complete output? - see Exercise file
+
+
+
+    public static void zoop(String fred, int bob) {
+        System.out.println(fred);
+        if (bob == 5) {
+            ping("not ");
+        } else {
+            System.out.println("!");
+        }
+    }
+
+    public static void main(String[] args) {
+        int bizz = 5;
+        int buzz = 2;
+        zoop("just for", bizz);
+        clink(2 * buzz);
+    }
+
+    public static void clink(int fork) {
+        System.out.print("It's ");
+        zoop("breakfast ", fork);
+    }
+
+    public static void ping(String strangStrung) {
+        System.out.println("any " + strangStrung + "more ");
+    }
+
+}
+/*This is the answer for number 2 in Exercise 5.12
+The Complete output is:
+just for
+any not more
+It's breakfast
+! */
+/*Exercise 3  
+Draw a stack diagram that shows the state of the program in Section 5.8 after main invokes nLines with the parameter n == 4, just before the last invocation of nLines returns.
+
+
+Exercise 5  
+The purpose of this exercise is to take a problem and break it into smaller problems, and to solve the smaller problems by writing simple methods. Consider the first verse of the song “99 Bottles of Beer”:
+
+99 bottles of beer on the wall,
+99 bottles of beer,
+ya’ take one down, ya’ pass it around,
+98 bottles of beer on the wall.
+Subsequent verses are identical except that the number of bottles gets smaller by one in each verse, until the last verse:
+
+No bottles of beer on the wall,
+no bottles of beer,
+ya’ can’t take one down, ya’ can’t pass it around,
+’cause there are no more bottles of beer on the wall!
+And then the song (finally) ends.
+
+Write a program that displays the entire lyrics of “99 Bottles of Beer”. Your program should include a recursive method that does the hard part, but you might want to write additional methods to separate other parts of the program. As you develop your code, test it with a small number of verses, like 3.*/
