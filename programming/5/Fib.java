@@ -9,17 +9,21 @@ public class Fib
   
   //your implementation of fib(n) here
 
-public static int fibo (int x){
-  if(x == 0 || x ==1){
-    return 1;
+public static int fib (int x){
+  if(x>1){
+    return fib(x-1) + fib(x-2);
+    
   }
   else{
-    return fibo(x-1) + fibo(x-2);
+   return x; 
   }
 }
   public static void main( String[] args )
   {
-    System.out.println(fibo(6));
+    
+    
+    
+    System.out.println(fib(6));
     
    
       System.out.println( fib(0) ); // -> 0
