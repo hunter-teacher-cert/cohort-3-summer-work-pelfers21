@@ -40,8 +40,5 @@ public class SuperArrayDriver
 
   }//main
 
-}//class SuperArrayDriver
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
+}//class SuperArrayDriverFooter
+
