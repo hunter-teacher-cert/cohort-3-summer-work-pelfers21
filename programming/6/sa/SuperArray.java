@@ -111,7 +111,7 @@ public class SuperArray
 
   public String toString()
   {
-    //return stringified version of this Object and you want to print every object. This method traverses through our array and loop and adds 
+    //return stringified version of this Object and you want to print every object. This method traverses through our array an
     String myString = "";
     for (int i = 0; i < data.length; i++) {
      myString += data [i] + " ";
