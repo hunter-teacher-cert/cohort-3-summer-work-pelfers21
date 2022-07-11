@@ -21,7 +21,7 @@ public static int fibo (int x){
   {
     System.out.println(fibo(6));
     
-    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   
       System.out.println( fib(0) ); // -> 0
       System.out.println( fib(1) ); // -> 1
       System.out.println( fib(2) ); // -> 1
@@ -32,7 +32,7 @@ public static int fibo (int x){
       System.out.println( fib(10) ); // -> 55
       System.out.println( fib(20) ); // -> 6765
       System.out.println( fib(40) ); // -> 102334155
-      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+      
 
   }//end main()
 

@@ -6,7 +6,7 @@ import java.util.*;
  * Time class by Team LucidThinkeren
 
  * collaborators: First Last, First Last
-Parmanand Mohanlall, Patti Elfers-Wygand
+Parmanand Mohanlall, Patti Elfers-Wygand, Adam Prado
  */
 
 /**
@@ -45,16 +45,16 @@ public class Time {
 	this.hours = 0;
 	this.minutes = 0;
 	this.seconds = 0;
-
     }
+  
 
     /**
        Parameters:
        - hrs, mins, secs - the time you want to create the class as
-       Initialize this instance to represent hrs:mins:secs as the time.
+       Initialize this instance to represent hrs:mins:secs as the time.*/
        
-     */
-    public Time(int hrs, int mins, int secs){
+     
+public Time(int hrs, int mins, int secs){
 
 	// your code here
       this.hours = hrs;
@@ -105,6 +105,7 @@ public class Time {
       this.hours = this.hours + other.hours;
       this.minutes = this.minutes + other.minutes;
       this.seconds = this.seconds + other.seconds;
+   
 
     }
 
@@ -124,9 +125,11 @@ public class Time {
      
       
 
-	return false; // change this
+	else {
+    return false; }// change this
     }
 
+    
     /**
        Parameters:
        other - a variable of type Time
@@ -139,10 +142,46 @@ public class Time {
     */
     public int compareTo(Time other){
 	// your code here)
+      int compareseconds;
+      compareseconds = ((this.hours * 60 * 60) + ( this.minutes * 60) + this.seconds);
+      int compareother;
+        compareother =  ((other.hours * 60 * 60) + ( other.minutes * 60) + other.seconds);
+      System.out.println(compareseconds);
+      System.out.println(compareother);
+      //return 0;
+      if ( compareseconds > compareother ){
+        return 1;
+      }else if ( compareseconds < compareother ){
+        return -1;
+      }else{
+        return 0;
+      }
+      
+    
 
-	return 0; // change this
-    }
+}
+}
+    
 
 
 
-}//end class 
+      
+      
+    
+
+
+
+       
+     
+      
+
+	//return false; // change this
+    //}
+
+
+	//return 0; // change this
+    
+
+
+
+ //end class 

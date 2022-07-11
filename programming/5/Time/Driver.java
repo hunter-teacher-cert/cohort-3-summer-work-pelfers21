@@ -43,7 +43,9 @@ public class Driver {
       
       a = new Time(6, 7, 8);
       System.out.println(z.equals(a));
-        
+      z.set(1,2,3);
+       a.compareTo(z);
+      
         
     }//end main()
 
