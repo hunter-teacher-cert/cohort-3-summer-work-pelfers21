@@ -15,5 +15,8 @@ public class Driver{
     System.out.println(l.get(1));
      System.out.println(l.get(3));
     System.out.println("This is the size of head:" + l.size());
+    l.add(2, "added data");
+    l.add(0, "hope it worked!");
+    System.out.println(l);
   }
 }

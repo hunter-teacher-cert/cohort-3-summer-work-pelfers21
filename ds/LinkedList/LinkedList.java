@@ -114,23 +114,23 @@ public class LinkedList{
   */
   public void add(int index, String value){ //add(2, "added Data")
  Node insert; 
-    int counter = 0; 
+    int counter = 0;
+    Node walker = head; 
 	 insert = new Node (value); //node including "added Data"
-    //insert.setNext(head.(index + 1));
+
     if (index == counter) 
     {
-      head.add(value);
+      //public void add(String value)
+      this.add(value);
+    } else {
+    while (walker != null && counter != index - 1) 
+    {
+      walker = walker.getNext();
+      counter++;
     }
-      else if (index - 1 > counter) 
-      {
-        head.getNext();
-        counter++;
-      }
-        else 
-        {
-        head.setNext = insert;
-        insert.setNext = head.getNext();
-        }
+    insert.setNext(walker.getNext());
+    walker.setNext(insert);
+    }
   }
 
 

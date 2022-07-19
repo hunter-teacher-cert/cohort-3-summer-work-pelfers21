@@ -18,9 +18,11 @@
 ````Javascript
 // PROVIDE
 // Variables go up here
+// STUDENT-PROMPT: How do we declare a variable? (Flow: declare, instantiate, use & test, then wrote code to have value change)
 
 
 function setup() {
+  // STUDENT-PROMPT: How big is our canvas?  What if we want to change the size?
 	createCanvas(400, 400);
 }
 
@@ -33,7 +35,11 @@ function draw() {
  // BEEG REVEAL: The background is one of our game colors and there is only 1 rectangle drawn, not 2!
  
 	// Make a rectangle that covers the left half of your canvas.  Fill it with your second color, then use noStroke() to remove the outline.
- 
+
+  // DELIBERATE-ERROR: create rectangle of wrong size/location
+  // STUDENT-PROMPT: how do we color in our rectangle?  (Make sure to discuss order.)
+
+  
   
   // If we have time: write code to display who wins!
 
