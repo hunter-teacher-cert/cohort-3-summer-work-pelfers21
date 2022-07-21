@@ -199,18 +199,18 @@ public class SortSearch{
        This algorithm only works on sorted ArrayLists.
     */
 
-    public int binarySearchRecursive(int value, int lowIndex, int highIndex){
+    //public int binarySearchRecursive(int value, int lowIndex, int highIndex){
 
 	// refer to class discussion
 	
 	//return 0;
 	    
-    }
+    //}
     
 	
     public String toString(){
-	return ""+data;
-    };
+	    return ""+data;
+    }
 
 
     public void builtinSort(){
