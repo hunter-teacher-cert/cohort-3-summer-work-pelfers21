@@ -24,11 +24,19 @@ public class SortSearchDriver {
 
 	 System.out.println(ss);
 	 ss.sort();
-	 System.out.println(ss);
-	
 
+  System.out.println("- Linear -");    
+	System.out.println(ss);
+	System.out.println(ss.linearSearch(3));
+  System.out.println(ss.linearSearch(5));
+  System.out.println(ss.linearSearch(0));
+  System.out.println("- Binary -");  
 
-	      
+        //System.out.println(ss);
+  //for (int j = 0; j < 20; j++)
+      //System.out.println(j + ": " + ss.binarySearch(j));
+      
+     
 
     }
 }

@@ -111,11 +111,10 @@ public class SortSearch{
         //create an int temp and set value of the smallest             element
         
         int temp = data.get(smallestIndex);
-        //created int smalls to set the value of the start             position
+        //
         int smalls = data.get(i);
-        //puts the smallest values at the start position
+        //set data set to i and temp and then set smallest 
         data.set(i, temp);
-        //puts the start values at the smallest values position -- swapping
         data.set(smallestIndex, smalls);
       }
 
@@ -133,19 +132,26 @@ public class SortSearch{
        until either the element is found or you've looked at all the elements.
        This algorithm works on any ArrayList.
     */
-    //public int linearSearch(int value){
-	  
-	  //for (int i = 0; i < smallIndex.size(); i++)
-    //{
-      //if (smallIndex.get(j) == target)
-      //{
-        //return j;
-     // }
-   // }
-    //return -1;
-  //}
-	//return 0; // replace this return
-    //}
+    public int linearSearch(int value)
+    {
+      int foundIndex = -1;//this returns a -1 if not found
+  
+    for (int i = 0; i < data.size(); i++) 
+    {
+      int element = data.get(i);
+      if (element == value) 
+      {
+        foundIndex = i;
+        break;
+      }
+    }
+    return foundIndex;
+    }
+    
+	 
+    
+
+
     
     /**
        Implement a binary search as specified by the comments
@@ -153,15 +159,39 @@ public class SortSearch{
        This algorithm only works on sorted ArrayLists.
     */
     public int binarySearch(int value){
-
+      int low = 0;
+      int high = data.size() -1;
+      int middle = (high + low) /2;
+      
+	// while we're not done:
+      while (true)
+      {
+        if (data.get(middle) == value)
+        {
+          return middle;
+        }
+        else if (value < data.get(middle)){
+          high = middle-1;
+        }
+        else if (high <= low){
+            return -1;
+        }
+        else {
+          low = middle + 1;
+        }
+        middle = (low + high)/2;
+      }
+    }
+  
 	// create assign variables  representing the high, low and middle indices 
+      
 	// while we're not done:
 	//   if the item is at data.get(middle), return middle
 	//   otherwise, update high, low, and middle
 
-	return 0;
+	
 	    
-    }
+
     
     /**
        Implement a RECURSIVE binary search as specified by the comments
@@ -173,7 +203,7 @@ public class SortSearch{
 
 	// refer to class discussion
 	
-	return 0;
+	//return 0;
 	    
     }
     
