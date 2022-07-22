@@ -5,7 +5,7 @@ public class SortSearchReferenceDriver {
     public static void main(String[] args) {
 
 
-	int size = 20;
+	int size = 100;
 
 	SortSearchReference ss = new SortSearchReference(size);
 	
@@ -16,7 +16,7 @@ public class SortSearchReferenceDriver {
 
 	start = System.currentTimeMillis();
 	ss.sort();
-	System.out.println(ss);
+	//System.out.println(ss);
 	elapsed = System.currentTimeMillis() - start;
 	System.out.println("Size: " + size + " Time: " + elapsed);
 	System.out.println(ss.get(17));
