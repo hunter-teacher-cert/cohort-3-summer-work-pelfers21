@@ -1,5 +1,5 @@
 
-# Methods Scaffolded Activities
+# Methods Scaffolded Activities - Coding A Traffic Light in P5 - Adam Driggs and Patti Elfers-Wygand
 
 ### We decided on using JavaScript since we both teach this course using P5 in Middle School.
 
