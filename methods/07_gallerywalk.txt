@@ -1,0 +1,34 @@
+First Last
+Methods Summer 2022
+GALLERY TOUR LOG
+
+
+USAGE OF TOP SECTION: 
+* Fill in discoveries etc section as you go, or after your is complete.
+* Replicate the 
+* Delete these instructions once read.
+====================================================
+DISCOVERIES:
+* any cool tips/tricks/hacks you learned
+* I like the use of the tables on Sam L's page
+I like how Kate's page utilized markdown  I like how she entered her code to the page.
+
+
+LINGERING QUESTIONS:
+* How do you create a table on markdown vs html
+Was wondering how to create spaces like line break does with htm.
+
+
+COMMENTS/CONCERNS/OTHER:
+* I think HTML has more variety to choose from to make the page more lively.  How can you add color to a markdown page.
+====================================================
+
+
+USAGE OF BOTTOM SECTION: 
+* For any site you deem notable, add an entry using the format below
+====================================================
+notable site:
+URL
+notable aspect:
+what is cool about this site
+-------------------------------------

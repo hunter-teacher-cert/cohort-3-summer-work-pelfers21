@@ -1,4 +1,5 @@
-import java.io.*;
+
+  import java.io.*;
 import java.util.*;
 
 /*
@@ -220,4 +221,114 @@ public class SortSearch{
     
 
     
-}
+
+  /* Merge Sort Stuff after here */
+    /**
+       Builds and returns an ArrayList that's already in increasing order.
+       You can use this method to test your merge method.
+    */
+    public ArrayList<Integer> buildIncreasingList(int size){
+	ArrayList<Integer>  newlist = new ArrayList<Integer>();
+	Random r = new Random();
+	int nextval = r.nextInt(20)+1;
+	for (int i=0;i<size;i++){
+	    newlist.add(nextval);
+	    nextval = nextval + r.nextInt(20);
+	}
+
+	return newlist;
+	}
+
+    /**
+       this routine should create and return a new ArrayList of
+       integers and fill it by merging list1 and list2 into the new
+       list.
+       list1 and list2 are already sorted in increasing order.
+       Example:
+       If list1 contains [1,5,17,25]
+       and list2 contains [3,6,10,30,40,50]
+       The new list will contain:
+       [1, 3, 5, 6, 10, 17, 25, 30, 40, 50]
+       
+    */
+
+    public ArrayList<Integer> merge(ArrayList<Integer> list1,
+				    ArrayList<Integer> list2){
+      ArrayList<Integer> output = new ArrayList<Integer>();
+      while(list1.size() > 0 && list2.size() > 0){
+        if(list1.get(0) < list2.get(0))    {
+        output.add(list1.get(0));
+          list1.remove(0);
+        }else{
+         output.add(list2.get(0));
+          list2.remove(0); 
+        }//ends else statement
+        
+      } //ends while loop - true until list one is empty
+      while(list1.size() > 0)  {
+        output.add(list1.get(0));
+        list1.remove(0);
+      }//true until list two is empty
+      while (list2.size() > 0) {
+      output.add(list2.get(0));
+        list2.remove(0);
+      }
+    return output;
+	// code for merge
+
+	//return new ArrayList<Integer>(); // replace this line
+}//end of merge method
+  public ArrayList<Integer> mergeSort(ArrayList<Integer> list){
+
+      // check for base case
+      if (list.size() < 2){
+        return list;
+      }
+    ArrayList<Integer> leftList = new ArrayList<Integer>();
+    ArrayList<Integer> rightList= new ArrayList<Integer>();
+      
+    for(int i = 0; i<list.size()/2; i++){
+      leftList.add(list.get(i));
+      
+      
+      
+    }
+    for (int j = list.size()/2;                   j<list.size(); j++){
+      rightList.add(list.get(j));
+    }
+    //System.out.println(leftList);
+    //System.out.println(rightList);
+  leftList = mergeSort(leftList);
+  rightList = mergeSort(rightList);
+    
+    
+    
+    
+    
+    
+    return merge (leftList, rightList);
+    
+    
+    
+        
+      
+    
+      // if not the base case
+      // split in two lists
+      // meregSort the left half
+      // mergeSort the right half
+      // merge them together into a new list
+      // return that new list 
+
+  }
+
+
+  public void msort(){
+      data =  mergeSort(data);
+  }
+//public class SortSearchReferenceDriver{
+  
+//}
+
+
+}//end of class
