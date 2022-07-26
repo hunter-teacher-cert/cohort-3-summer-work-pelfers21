@@ -277,10 +277,10 @@ public class SortSearch{
 	// code for merge
 
 	//return new ArrayList<Integer>(); // replace this line
-}//end of merge method
+}
+  
   public ArrayList<Integer> mergeSort(ArrayList<Integer> list){
 
-      // check for base case
       if (list.size() < 2){
         return list;
       }
