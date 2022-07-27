@@ -6,7 +6,14 @@ public class ExpressionTree{
     //You must write this method:
     //Calculate the value of the entire tree
     public double evaluate(){
-      return 10000000000000.0;//replace this
+      if(isValue()){
+        return value;
+      }else{
+        return apply(left.evaluate(),right.evaluate(),operator);
+      }
+
+      
+      //return 10000000000000.0;//replace this
     }
 
     //You must write this method:
