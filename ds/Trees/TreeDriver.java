@@ -64,12 +64,14 @@ public class TreeDriver{
     ExpressionTree g = new ExpressionTree('+',b,c);
     ExpressionTree h = new ExpressionTree('*',a,d);
    ExpressionTree i = new ExpressionTree('+',h,one);
+    //ExpressionTree()
     System.out.println("Should print out the same thing as the comments in the source code:");
     System.out.println(e.toString() + " is equal to " + e.evaluate());
     System.out.println(f.toString() + " is equal to " + f.evaluate());
     System.out.println(g.toString() + " is equal to " + g.evaluate());
     System.out.println(h.toString() + " is equal to " + h.evaluate());
     System.out.println(i.toString() + " is equal to " + i.evaluate());
+    
   
     /** output:
     ((3.0*4.0)/2.0) is equal to 6.0
@@ -84,5 +86,6 @@ System.out.println("Should print out the to String Prefix as the comments in the
     System.out.println(g.toStringPrefix() + " is equal to " + g.evaluate());
     System.out.println(h.toStringPrefix() + " is equal to " + h.evaluate());
     System.out.println(i.toStringPrefix() + " is equal to " + i.evaluate());
+   // System.out.println()
   }
 }

@@ -78,11 +78,18 @@ public class ExpressionTree{
     return a-b;
    }else if(op == '*'){
     return a*b;
-   }else{ //  if(op == '/'){ //or any invalid operators
+  }else if (op == '/'){ //or any invalid operators
     return a/b;
    }
+    else{
+      return Math.pow(a,b);
+        }
+  }
+  
+          
+  
 
-  }/*Challenge--The way we write our mathematical operators is called infix notation. This just means the operator (+,-,* etc.) is in between the operands (numbers or variables).
+  /*Challenge--The way we write our mathematical operators is called infix notation. This just means the operator (+,-,* etc.) is in between the operands (numbers or variables).
 
 When we write functions in programming languages that syntax is actually prefix notation (the operator or function name comes first).*/
     /*Prefix and postfix with math operators is used in some types of calculators and programming languages.
