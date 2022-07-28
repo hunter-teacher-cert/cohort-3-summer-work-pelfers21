@@ -78,6 +78,11 @@ public class TreeDriver{
     ((1.0+1.0)*(1.0/2.0)) is equal to 1.0
     (((1.0+1.0)*(1.0/2.0))+1.0) is equal to 2.0
     */
-
+System.out.println("Should print out the to String Prefix as the comments in the source code:");
+    System.out.println(e.toStringPrefix() + " is equal to " + e.evaluate());
+    System.out.println(f.toStringPrefix() + " is equal to " + f.evaluate());
+    System.out.println(g.toStringPrefix() + " is equal to " + g.evaluate());
+    System.out.println(h.toStringPrefix() + " is equal to " + h.evaluate());
+    System.out.println(i.toStringPrefix() + " is equal to " + i.evaluate());
   }
 }
