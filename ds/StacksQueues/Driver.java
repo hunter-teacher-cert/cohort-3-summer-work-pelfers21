@@ -8,7 +8,7 @@ public class Driver{
 
   public static void main(String[] args) {
 
-	Stack s = new Stack();
+ Stack s = new Stack();
   //test print
   System.out.println(s); //should print [] for an empty array;
   System.out.println("is empty? " + s.isEmpty());
@@ -37,7 +37,29 @@ public class Driver{
   
     System.out.println(s);
 
-	// Queue q = new Queue();
-	
+  //Testing the Queue
+	Queue q = new Queue();
+	System.out.println(q); //prints empty list, i.e. nothing
+  System.out.println("Is Empty: " +q.isEmpty());
+  //q.enqueue(5); //add 5 to the list
+  for(int i = 0; i < 20; i++){//creates random aray of size ten
+    Random r = new Random();//creates random LL 
+    q.enqueue(r.nextInt(100)); //ints betwen 1 and 100
+  }
+    
+  System.out.println(q);//prints list
+  System.out.println("The size is: " + q.size());
+  System.out.println("dequeue " + q.dequeue()); //show dequeue status
+  System.out.println(q); //print dequeued q
+  System.out.println("First element in list " + q.front());//showing first element
+  System.out.println("The size is:  " + q.size());
+
+    while(!q.isEmpty()){ //while not empty!
+      System.out.println("dequeue " + q.dequeue());
+      System.out.println("The size is: " + q.size());
+    }
+
+    //BOOM!
+  
   }
 }
