@@ -2,7 +2,7 @@
 #### Written with Collaborative Input from Team hashtagBEGUDFAM
 Roster: Patti Elfers - Group Members: Saranii Muller, Adam Driggs, Christopher DeSilva
 
-### Environment
+### Environment-All are related to School Community
 
 * school size: 1700 students
 * school grade range: 6-9
@@ -56,10 +56,11 @@ Measuring success can be seen by:
 
 * * *
 ### Related resources
-* [a link (this is the visible text)](https://xkcd.com)
+
 * [NYC First Robotics](https://www.nycfirst.org/)
 * Eric Chen - FHHS - incorporate community outreach to local high school
 * Jen Feldman - PS 157 - incorporate community outreach to elementary school
+* Mr. Lober and Ms Elfers - Robotics Coordinators
 
 ## Club|Organization|Initiative|System: 
 Creating Parent Interest in CS Through Parent Engagement
@@ -93,35 +94,47 @@ Measuring success can be seen by:
 
 ### Related resources
 * [Scratch](http://scratch.mit.edu)
-*
-* a story
-* a book
-* name of a person who know a lot
-* etc
+* Ms. Elfers and Mr. Lober - organizers
 
-## Club|Organization|Initiative|System: 
+## Club|Organization|Initiative|System: School-wide Hackathon (Hack League) and include parents/siblings/teachers
 
 
 #### Expected Positive Outcomes
 This is attractive because...
+*will help build CS interest throughout the school community
+* all students in the school are invited--no coding experience needed
+* different ages/grade levels work together and make new friends
+* Parents working with children and other parents
+* Other teachers working with teams
 * 
   
   #### Rollout Timeline
-* 
+* planning time is about 4-6 weeks
+* need to create a form and advertise around the school
+* use of Mouse Squad to spread the word
+* Use of school web site to advertise
+* Collecting of registrants in the Google Form
+* Theme for the Event - Problem the students/parents/teachers have to solve
+* Prizes
+* Tee-shirts
+* Lunches
 #### Mechanism for Gauging Efficacy
 How will you know it is working?
 Measuring success can be seen by:
-* 
+* if interest is there, there will be questions posed to the Parent Coordinator and/or the teacher/organizer
+* The Google Form will be filled out with enough participants
+* Questions will be posed about the event to those organizing
 
 #### Expected Hurdles and Plans to Overcome
 * Parents signing up and not showing up
-* 
+* Teachers volunteering and not showing up
+* Students not showing up
+* Possibility of money not available for prizes, lunches, or tee shirts (incentives)
+* Not having enough registrants for the event
 * * *
 
 ### Related resources
 * [Scratch](http://scratch.mit.edu)
+* [CS4ALL Hackathon Information](https://sites.google.com/schools.nyc.gov/cs4allnyc/events/hack-league?authuser=0)
+* Ms. Elfers or Mr. Lober - organizers
 *
-* a story
-* a book
-* name of a person who know a lot
-* etc
